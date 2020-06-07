@@ -1,0 +1,57 @@
+.painel-r::after {
+    top: 21px;
+    left: 11px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 40px;
+    width: 9px;
+    border-radius: 4px;
+    box-shadow: 0 0 29px #a3f7cb;
+    background: #a3f7cb;
+}
+.painel-r {
+    padding: 20px;
+    background: #212529;
+    border-radius: 20px;
+}
+
+.painel-c::after {
+    top: 21px;
+    left: 11px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 40px;
+    width: 9px;
+    border-radius: 4px;
+    box-shadow: 0 0 29px #f44336;
+    background: #f44336;
+}
+.painel-c {
+    padding: 20px;
+    background: #212529;
+    border-radius: 20px;
+}
+
+.painel-a::after {
+    top: 21px;
+    left: 11px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 40px;
+    width: 9px;
+    border-radius: 4px;
+    box-shadow: 0 0 29px #f4e136;
+    background: #f4e136;
+}
+.painel-a {
+    padding: 20px;
+    background: #212529;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}

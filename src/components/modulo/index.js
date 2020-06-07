@@ -31,7 +31,6 @@ class Modulo extends React.Component {
                         </li>
                     ))}
                 </ul>
-
             </div>
         );
     }
