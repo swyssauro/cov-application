@@ -3,6 +3,8 @@ import './styles.css';
 import api from '../../components/api';
 import Navbar from '../../components/nav';
 
+import imgs from '../../components/styles/image 2.png';
+
 class Home extends Component {
 
   state = {
@@ -20,23 +22,26 @@ class Home extends Component {
       <>
         <Navbar />
         <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className="painel-r">
-                <h1>{covid.cases}</h1>
-              </div>
-            </div>
-            <div className="col">
-              <div className="painel-a">
-                <h1>{covid.cases}</h1>
-              </div>
-            </div>
-            <div className="col">
-              <div className="painel-c">
-                <h1>{covid.cases}</h1>
-              </div>
+          <h1 className="tiitle-ops">Opensource</h1>
+          <p className="descrip-ops">Opensource Frontend for new covid19 and backend axios.</p>
+          <img className="imgs-l" src={imgs} alt="alts" />
+        </div>
+
+        <h1 className="title">{covid.country}</h1>
+        <p className="descrip-ops">dados no mundo sobre o novo virus</p>
+        <div className="container">
+        <div className="row">
+          <div className="col">
+            <div className="painel-nds">
+             <h1> {covid.recovered}</h1>
             </div>
           </div>
+          <div className="col">
+            <div className="painel-nds">
+            <h1> {covid.recovered}</h1>
+            </div>
+          </div>
+        </div>
         </div>
       </>
     );

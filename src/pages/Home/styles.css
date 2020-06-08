@@ -33,9 +33,8 @@
     background: #212529;
     border-radius: 20px;
 }
-
-.painel-a::after {
-    top: 21px;
+.painel-nds::after {
+    top: 14px;
     left: 11px;
     position: absolute;
     content: "";
@@ -43,13 +42,41 @@
     height: 40px;
     width: 9px;
     border-radius: 4px;
-    box-shadow: 0 0 29px #f4e136;
-    background: #f4e136;
+    box-shadow: 0 0 29px #5dff94b3;
+    background: #5dff94;
+}
+.painel-nds {
+    background: #1f23276e;
+    padding: 20px;
+    border-radius: 5px;
+}
+.title {
+    color: #e3e3e3;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
 }
 .painel-a {
     padding: 20px;
     background: #212529;
     border-radius: 20px;
+}
+.descrip-ops {
+    text-align: center;
+    color: #e3e3e333;
+    line-height: 0px;
+}
+.tiitle-ops {
+    text-align: center;
+    color: #e3e3e3;
+    font-size: 45px;
+    position: relative;
+    width: 100%;
+    font-weight: 800;
+}
+.imgs-l {
+    width: 60%;
+    margin: 0 20%;
 }
 
 h1 {
