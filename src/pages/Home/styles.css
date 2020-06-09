@@ -16,6 +16,21 @@
     border-radius: 20px;
 }
 
+.tils-elemt {
+    color: #e3e3e3;
+    font-size: 33px;
+    font-weight: 900;
+    margin-block-start: 5px;
+    line-height: 5px;
+}
+
+.descri-elemt {
+    color: #e3e3e3;
+    font-family: 'Vibes', cursive;
+    font-size: 29px;
+    margin: 0px;
+}
+
 .painel-c::after {
     top: 21px;
     left: 11px;
@@ -50,6 +65,25 @@
     padding: 20px;
     border-radius: 5px;
 }
+
+.painel-deaf::after {
+    top: 14px;
+    left: 11px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 40px;
+    width: 9px;
+    border-radius: 4px;
+    box-shadow: 0 0 29px #ff5e5d;
+    background: #ff5e5d;
+}
+.painel-deaf {
+    background: #1f23276e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .title {
     color: #e3e3e3;
     font-size: 30px;

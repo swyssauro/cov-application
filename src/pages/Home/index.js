@@ -30,18 +30,20 @@ class Home extends Component {
         <h1 className="title">{covid.country}</h1>
         <p className="descrip-ops">dados no mundo sobre o novo virus</p>
         <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="painel-nds">
-             <h1> {covid.recovered}</h1>
+          <div className="row">
+            <div className="col">
+              <div className="painel-nds">
+                <h1 className="tils-elemt">Recoved</h1>
+                <h1 className="descri-elemt"> {covid.recovered}</h1>
+              </div>
+            </div>
+            <div className="col">
+              <div className="painel-deaf">
+                 <h1 className="tils-elemt">Deaths</h1>
+                <h1 className="descri-elemt"> {covid.recovered}</h1>
+              </div>
             </div>
           </div>
-          <div className="col">
-            <div className="painel-nds">
-            <h1> {covid.recovered}</h1>
-            </div>
-          </div>
-        </div>
         </div>
       </>
     );
