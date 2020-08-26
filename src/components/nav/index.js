@@ -15,7 +15,7 @@ class Nav extends React.Component {
                     <a href="/"><h1 className="tittle-st"><FiKey /></h1></a>
                     <ul className="nav-wrapper warp2">
                         <li><a href="/">why cov_</a></li>
-                        <li><a href="/">explore</a></li>
+                        <li><a href="/explore">explore</a></li>
                     </ul>
                     <ul className="nav-wrapper">
                         <li><a href="https://github.com/swyssauro"><FaGithub size="25" /></a></li>

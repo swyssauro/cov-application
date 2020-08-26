@@ -8,6 +8,16 @@
     line-height: 1.4;
     font-family: 'Poppins', sans-serif;  
 }
+.tittle-h1 {
+    font-size: 18px;
+    color: #ffffffe8;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.painel_cov {
+    display: flex;
+    justify-content: space-between;
+}
 
 body {
     background: #24292e;

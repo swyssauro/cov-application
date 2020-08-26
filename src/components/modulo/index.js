@@ -1,4 +1,7 @@
 import React from 'react';
+import Header from '../../components/nav'
+import { FiTrendingUp, FiTrendingDown } from 'react-icons/fi';
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa'
 import '../styles/styles.css'
 import '../styles/default.css'
 
@@ -18,20 +21,24 @@ class Modulo extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h1>COVID19 - TODAS REGIÕES</h1>
-                <ul className="container">
-                    {this.state.paises.map((item, index) => (
-                        <li className="wrapper" key={index}>
-                            <h2>{item.country}</h2>
-                            <p>Casos: {item.cases}</p>
-                            <p>Casos hoje: {item.todayCases}</p>
-                            <p>Mortes: {item.deaths}</p>
-                            <p>Recuperados: {item.recovered}</p>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            <>
+                <Header />
+                   <div className="container">
+                   <ul>
+                        {this.state.paises.map((item, index) => (
+                            <div className="p-nov">
+                                <li className="wrapper painel_cov" key={index}>
+                                    <h2 className="tittle-h1">{item.country}</h2>
+                                    <p><FaChevronDown/> {item.cases}</p>
+                                    <p><FaChevronUp/> {item.todayCases}</p>
+                                    <p><FiTrendingDown/> {item.deaths}</p>
+                                    <p><FiTrendingUp/> {item.recovered}</p>
+                                </li>
+                            </div>
+                        ))}
+                    </ul>
+                   </div>
+            </>
         );
     }
 }
