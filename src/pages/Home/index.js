@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import './styles.css';
 import api from '../../components/api';
 import Navbar from '../../components/nav';
+import Footer from '../../components/Footer';
 
-import imgs from '../../components/styles/image 2.png';
+import { Container, Row, Col } from 'react-bootstrap';
+import imgs from '../../components/styles/image 1.svg';
 
 class Home extends Component {
 
@@ -21,30 +23,20 @@ class Home extends Component {
     return (
       <>
         <Navbar />
-        <div className="container">
-          <h1 className="tiitle-ops">Opensource</h1>
-          <p className="descrip-ops">Opensource Frontend for new covid19 and backend axios.</p>
-          <img className="imgs-l" src={imgs} alt="alts" />
-        </div>
-
-        <h1 className="title">{covid.country}</h1>
-        <p className="descrip-ops">dados no mundo sobre o novo virus</p>
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className="painel-nds">
-                <h1 className="tils-elemt">Recoved</h1>
-                <h1 className="descri-elemt"> {covid.recovered}</h1>
-              </div>
+        <Container className="mg-b">
+          <h1 className="tiitle-ops">why cov_</h1>
+          <p className="descrip-ops">projeto open source para informações sobre o coronavirus</p>
+          <br/>
+          <Row>
+            <Col>
+            <div className="box-1">
+              <div className="explores">explore</div>
             </div>
-            <div className="col">
-              <div className="painel-deaf">
-                 <h1 className="tils-elemt">Deaths</h1>
-                <h1 className="descri-elemt"> {covid.recovered}</h1>
-              </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
+        <img className="imgs-l" src={imgs} alt="alts" />
+        <Footer/>
       </>
     );
   }
