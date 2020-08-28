@@ -1,45 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { FiArrowDownCircle } from 'react-icons/fi'
 import './styles.css';
-import api from '../../components/api';
-import Navbar from '../../components/nav';
-import Footer from '../../components/Footer';
 
-import { Container, Row, Col } from 'react-bootstrap';
-import imgs from '../../components/styles/image 1.svg';
-
-class Home extends Component {
-
-  state = {
-    covid: [],
-  }
-
-  async componentDidMount() {
-    const response = await api.get('/countries/World');
-    this.setState({ covid: response.data })
-  }
-
-  render() {
-    const { covid } = this.state;
-    return (
-      <>
-        <Navbar />
-        <Container className="mg-b">
-          <h1 className="tiitle-ops">why cov_</h1>
-          <p className="descrip-ops">projeto open source para informações sobre o coronavirus</p>
-          <br/>
-          <Row>
-            <Col>
-            <div className="box-1">
-              <div className="explores">explore</div>
-            </div>
-            </Col>
-          </Row>
-        </Container>
-        <img className="imgs-l" src={imgs} alt="alts" />
-        <Footer/>
-      </>
-    );
-  }
+export default function Home() {
+  return (
+    <>
+      <div className="container-home">
+        <a href="#container-hoy"><FiArrowDownCircle color="#ffd670" className="arrown-icon" size="30" /></a>
+      </div>
+      <div id="container-hoy" className="container-hoy">
+        <h3 className="title">
+          <b>Coronaviruses</b> are a large group of viruses that are common among animals. In rare cases, they are what scientists call zoonotic, meaning they can be transmitted from animals to humans, according to the US Centers for Disease Control and Prevention.
+        </h3>
+      </div>
+    </>
+  );
 }
-
-export default Home;

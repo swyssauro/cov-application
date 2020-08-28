@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../../components/nav'
-import '../styles/styles.css'
 import '../styles/default.css'
 
 class Modulo extends React.Component {
@@ -20,7 +18,6 @@ class Modulo extends React.Component {
     render() {
         return (
             <>
-                <Header />
                    <div className="container">
                         {this.state.paises.map((item, index) => (
                             <div className="p-nov" key={index}>
