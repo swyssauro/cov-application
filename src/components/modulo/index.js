@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 import '../styles/default.css'
 
 class Modulo extends React.Component {
@@ -18,18 +19,19 @@ class Modulo extends React.Component {
     render() {
         return (
             <>
-                   <div className="container">
+                <br />
+                <div className="container-primary">
+                    <div className="container container-grid">
                         {this.state.paises.map((item, index) => (
                             <div className="p-nov" key={index}>
-                                    <h2 className="tittle-h1">{item.country}</h2>
-                                    <p>{item.cases}</p>
-                                    <p>{item.todayCases}</p>
-                                    <p>{item.deaths}</p>
-                                    <p>{item.recovered}</p>
+                                <h2 className="tittle-h1">{item.country}</h2>
+                                <p>cases <b>{item.cases}</b>  todayCases <b>{item.todayCases}</b></p>
+                                <p>deaths <b>{item.deaths}</b> recovered <b>{item.recovered}</b></p>
                             </div>
                         ))}
-                   </div>
-                   
+                    </div>
+                </div>
+
             </>
         );
     }
